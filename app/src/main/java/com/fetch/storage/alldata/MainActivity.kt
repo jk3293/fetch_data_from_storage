@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //
         MediaLoader().loadDeviceMedia(this@MainActivity, "video", "DateNewToOld", object : MediaLoader.MediaLoadListener {
             override fun onMediaLoadStart() {
                 Log.e("MainActivity", "onMediaLoadStart: ")
